@@ -3,7 +3,7 @@ CREATIVE TILT
 This game was our first undertaking of such scale in Phaser.js, and all of us took a very long time to learn Phaser. But in the end we got a game that we are pretty proud of.
 
 Firstly, we are very happy about the result of the art direction. The backgrounds were created with lots of hard work in Photoshop--I had to learn more about the brushes in Photoshop in order to find the grass brush, and even import a custom grass brush to make the grass feel like...grass.
-Rishi drew every single frame of the ant's animation--applying the run cycle he had learned from CMPM 26. He made the ant look as buglike as possible, not trying to anthropomorphize the ant, even though it runs its two hind legs. The music and sounds were also composed by Rishi using a little bit of FL Studio 20.
+Rishi drew every single frame of the ant's animation--applying the run cycle he had learned from CMPM 26. He made the ant look as buglike as possible, not trying to anthropomorphize the ant, even though it runs its two hind legs. The music and sounds were also composed by Rishi using a little bit of FL Studio 20. We wanted to create an art style similar to Red Bugs Puzzle on Miniclip--a puzzle game which is unrelated to this endless runner requirement.
 
 Technically, this was our first dabble into Arcade Physics. There were many challenges--such as the ant's jump mechanic, modifying it to make it a double jump, getting the animations for the ant to trigger properly, etc.
 For the jump mechanic, we ended up switching our entire program to arcade physics. We experimented quite a bit with the jump mechanic until we finally got the double jump we wanted, by adjusting the vertical velocity of the ant sprite and triggering a jumping animation when the user clicks space.
