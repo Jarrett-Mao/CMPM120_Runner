@@ -16,6 +16,9 @@ class Play extends Phaser.Scene {
         // Load fruit.
         this.load.image('Fruit', 'assets/Fruit.png');
 
+        // Load falling sound.
+        this.load.audio('Falling', 'assets/FallingCartoonSound.wav');
+
         // Load player spritesheet for running.
         this.load.spritesheet('Ant', 'assets/AntSpritesheet.png', {frameWidth: 150, frameHeight: 271});
 
@@ -29,6 +32,7 @@ class Play extends Phaser.Scene {
         distance = 0;
         this.lastPlatDist = 0;
         this.lastEnemyDist = 0;
+        this.fall = false;
         beatHighScore = false;
 
         // To keep track of jumping.
@@ -293,7 +297,10 @@ class Play extends Phaser.Scene {
 
     fellOffScreen() {
         this.GPBG.tilePositionX -= 1;
-        this.fall = true;
+        if (!this.fall) {
+            this.sound.play('Falling');
+            this.fall = true;
+        }
         score -= 10;
         distance += this.runSpeed;
         this.antP1.setVelocityY(0);
