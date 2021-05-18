@@ -148,8 +148,8 @@ class Play extends Phaser.Scene {
 
         let randFruitY = Math.floor(
             Math.random() * 
-            (this.antP1.y-(this.antP1.y-300))
-            + (this.antP1.y-300));
+            (this.antP1.y-(this.antP1.y-275))
+            + (this.antP1.y-275));
 
         if (distance % 300 == 0) {
             let fruit = this.physics.add.sprite(distance + 700,randFruitY,'Fruit');
