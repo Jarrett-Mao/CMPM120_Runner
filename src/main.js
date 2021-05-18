@@ -1,5 +1,7 @@
 /*
-CREATIVE TILT
+BIG BUG RUN
+Rishi Prasanna, Jarrett Mao, Felix Tham - Group B4
+
 This game was our first undertaking of such scale in Phaser.js, and all of us took a very long time to learn Phaser. But in the end we got a game that we are pretty proud of.
 
 Firstly, we are very happy about the result of the art direction. The backgrounds were created with lots of hard work in Photoshop--I had to learn more about the brushes in Photoshop in order to find the grass brush, and even import a custom grass brush to make the grass feel like...grass.
